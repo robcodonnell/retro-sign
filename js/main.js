@@ -1,9 +1,7 @@
-var $lines = $('.lines');
-var $engage = $('.engage');
-var $btn = $('.btn');
+$('svg').on('click', function () {
+  $('svg').toggleClass('active');
+});
 
-$btn.on('click', function (e) {
-  $('.engage').toggleClass('engaged');
-  $btn.toggleClass('button');
-  $lines.toggleClass('is-clicked');
+$('svg').on('mouseover', function () {
+  $('.btn').toggleClass('.btn:active');
 });
